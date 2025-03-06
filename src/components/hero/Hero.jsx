@@ -1,24 +1,24 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import card3 from '../../assets/card3.jpeg'
-import card4  from '../../assets/card4.jpeg'
+import card3 from '../../assets/card3.png'
+import card4  from '../../assets/card4.png'
 import styled from 'styled-components';
 import Heroflow from './Heroflow';
 
 function Hero() {
     const navigate = useNavigate()
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4">
+    <section className="flex flex-col items-center justify-center h-screen bg-blue-300 p-4">
    
-    <div className="flex flex-col md:flex-row w-full gap-4">
+    <div className="flex flex-col md:flex-row w-full gap-4" >
       {/* Left Div */}
-      <div className="flex-1 text-white p-6 flex flex-col items-center justify-center min-h-[300px]"
+      <div className="flex-1 text-white p-6 flex flex-col items-center justify-center min-h-[350px]"
        style={{
         backgroundImage: `url(${card4})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
-       }}>
-        <h2 className="text-2xl text-black font-bold mb-4">EDU Connect</h2>
+       }}> 
+        <h2 className="text-4xl text-black font-bold mb-4">EDU Connect</h2>
         <p className="mb-4 text-black"></p>
         <StyledWrapper>
       <button href="#" className="button bg-cyan-300"style={{  background:'rgb(13, 13, 13)   ' }}>
@@ -36,7 +36,7 @@ function Hero() {
       </div>
 
       {/* Right Div */}
-      <div className="flex-1  text-black p-6 flex flex-col items-center justify-center min-h-[300px]"
+      <div className="flex-1  text-black p-6 flex flex-col items-center justify-center min-h-[350px]"
        style={{
         backgroundImage: `url(${card3})`,
                             backgroundSize: 'cover',
@@ -65,6 +65,7 @@ function Hero() {
   </section>
   )
 }
+
 const StyledWrapper = styled.div`
   .button {
     line-height: 1;
